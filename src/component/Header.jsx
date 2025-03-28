@@ -54,7 +54,7 @@ function Header() {
      
         <div className="max-w-[1200px] mx-auto  flex items-center">
      <div className='w-[100px] '>
-        <img src="Swiggy-logo.png" className="w-full"  alt="img" />
+        <img src="images/Swiggy-logo.png" className="w-full"  alt="img" />
      </div>
      <div className="">
         <span className="font-bold border-b-[3px] border-[black]"> Ratanada </span> Jodhpur, Rajasthan, India <RxCaretDown fontSize={25} className='inline  text-[#fc8019] cursor-pointer' onClick={showSideMenu}/>
