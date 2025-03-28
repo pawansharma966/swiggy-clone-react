@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaArrowLeft ,FaArrowRight} from "react-icons/fa";
+import Card from './Card';
 
 export default function TopRest ()  {
 
@@ -9,7 +10,7 @@ export default function TopRest ()  {
               const response = await fetch("/restaurantChains.json"); // path from public
               const apiData = await response.json();
               setData(apiData);
-              console.log('data', apiData)
+            //   console.log('data', apiData)
             } catch (error) {
               console.error("Error fetching categories:", error);
             }
@@ -19,7 +20,7 @@ export default function TopRest ()  {
             fetchTopRestaurant();
           }, []);
     return (
-            <div className='max-w-[1200px] mx-auto'>
+            <div className='max-w-[1200px] mx-auto '>
                  <div className='flex my-3 items-center justify-between'>
                     <div className='text-[25px] font-bold'>Top restaurant chains in jodhpur</div>
                     <div className='flex'>
@@ -32,6 +33,17 @@ export default function TopRest ()  {
          
                     </div>
                  </div>
+                 {/* card */}
+                 <div className='flex gap-5 overflow-hidden'>
+                   {data.map(
+                    (d,i)=>{
+                        return <Card {...d} key={i}  />
+                   
+                    }
+                   )}
+                 </div>
+                 <hr className='my-4 border-[1px] text-slate-400' />
+
                  </div>
     )
 }

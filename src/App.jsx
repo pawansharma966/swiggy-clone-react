@@ -3,6 +3,7 @@ import './App.css'
 import Header from "./component/Header";
 import Category from "./component/Category";
 import TopRest from "./component/TopRest";
+import OnlineDelivery from "./component/OnlineDelivery";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
 <Header />
 <Category />
 <TopRest />
-    
+<OnlineDelivery />    
     
       
 

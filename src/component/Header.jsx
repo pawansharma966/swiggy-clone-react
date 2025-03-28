@@ -50,7 +50,7 @@ function Header() {
          className='w-[500px] bg-white h-full absolute duration-[400ms]'
         style={{left: toggle ? '0%' : '-100%'}}></div>
     </div>
-    <header className="p-[15px] shadow text-[#686b78]">
+    <header className="p-[15px] shadow text-[#686b78] sticky top-0 bg-white z-[9999]">
      
         <div className="max-w-[1200px] mx-auto  flex items-center">
      <div className='w-[100px] '>

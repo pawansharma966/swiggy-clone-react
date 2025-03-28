@@ -56,7 +56,7 @@ export default function Category() {
         </div>
       ))}
     </div>
-             <hr className='my-6 border-[1px]' />
+             <hr className='my-6 border-[1px] text-slate-400' />
         </div>
     )
 }
