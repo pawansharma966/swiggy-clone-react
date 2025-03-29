@@ -41,7 +41,8 @@ function Header() {
     <>
     <div className='black-overlay w-full h-full fixed duration-500' onClick={hideSideMenu} style={{
         opacity: toggle ? 1 : 0,
-        visibility: toggle ? "visible" : "hidden"
+        visibility: toggle ? "visible" : "hidden",
+        zIndex:999999999999
     }}> 
        
         <div onClick={(e) => {
@@ -59,8 +60,8 @@ function Header() {
      <div className="">
         <span className="font-bold border-b-[3px] border-[black]"> Ratanada </span> Jodhpur, Rajasthan, India <RxCaretDown fontSize={25} className='inline  text-[#fc8019] cursor-pointer' onClick={showSideMenu}/>
         </div>
-        <nav className="flex list-none gap-5  ml-auto text-[18px] font-semibold">
-         
+        <nav className="hidden md:flex list-none gap-5  ml-auto text-[18px] font-semibold">
+        
           {
             links.map(
                 (link, index) => {
@@ -72,6 +73,7 @@ function Header() {
                 }
             )
           }
+          
             
         </nav>
        

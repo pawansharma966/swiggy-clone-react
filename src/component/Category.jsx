@@ -29,7 +29,7 @@ export default function Category() {
       }
     
     return (
-        <div className='max-w-[1200px] mx-auto'>
+        <div className='max-w-[1200px] mx-auto px-2'>
          <div className='flex my-3 items-center justify-between'>
             <div className='text-[25px] font-bold'>What's on your mind?</div>
             <div className='flex'>
@@ -43,7 +43,7 @@ export default function Category() {
             </div>
          </div>
      {/* api call */}
-     <div className="flex border border-amber-500 overflow-hidden">
+     <div className="flex   overflow-hidden">
       {categories.map((cat, index) => (
         <div style={{
               transform: `translateX(-${slide * 100}%)`
